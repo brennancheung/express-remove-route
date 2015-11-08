@@ -1,0 +1,26 @@
+{
+  "name": "express-remove-route",
+  "version": "0.1.0",
+  "description": "Remove a route in express at runtime.",
+  "main": "index.js",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brennancheung/express-remove-route.git"
+  },
+  "keywords": [
+    "express",
+    "route",
+    "routes",
+    "routing",
+    "delete",
+    "remove"
+  ],
+  "author": "Brennan Cheung <git@brennancheung.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brennancheung/express-remove-route/issues"
+  },
+  "homepage": "https://github.com/brennancheung/express-remove-route#readme"
+}
