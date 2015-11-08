@@ -6,6 +6,10 @@ I wanted the ability to dynamically control Express routing but
 was not able to delete a route at runtime.  This module solves that
 problem.
 
+# Installation
+
+    npm install express-remove-route
+
 # Usage
 
     var removeRoute = require('express-remove-route');
@@ -24,7 +28,7 @@ problem.
 Note that the full path is supplied to `removeRoute` not just its
 local path from within the `router`.
 
-# Cavaet emptor
+# Caveat emptor
 This module has been tested against Express 4.13.3.  In theory,
 it should work with all of 4.x.
 
