@@ -2,6 +2,9 @@ module.exports = function removeRoute(app, path) {
     var found, route, stack, idx;
     
     found = findRoute(app, path);
+
+    if (!found) return false;
+
     route = found.route;
     stack = found.stack;
 
