@@ -89,4 +89,6 @@ structures that may be subject to change.
 
 Contributors
 ------------
+Brennan Cheung ([git@brennancheung.com](mailto:git@brennancheung.com))
+
 Alessandro Romanino ([a.romanino@gmail.com](mailto:a.romanino@gmail.com))
