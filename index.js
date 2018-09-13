@@ -16,7 +16,7 @@ function _findRoute(path,stack) {
         if (layer.name == 'router') {
             routes=routes.concat(_findRoute(trimPrefix(path, layer.path),layer.handle.stack));
         } else {
-            if (layer.name == 'bound ') {
+            if (layer.name == 'bound dispatch') {
                 routes.push({route: layer || null, stack: stack});
             }
         }
