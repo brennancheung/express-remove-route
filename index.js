@@ -38,6 +38,7 @@ function trimPrefix(path, prefix) {
 
 module.exports = function removeRoute(app, path, method) {
     var found, route, stack, idx;
+    var removed = false;
 
     found = findRoute(app, path);
 
@@ -49,14 +50,18 @@ module.exports = function removeRoute(app, path, method) {
             if(_.isEmpty(method)){  // if no method delete all resource with the given path
                 idx = stack.indexOf(route);
                 stack.splice(idx, 1);
+
+                removed = true;
             }else if(JSON.stringify(route.route.methods).toUpperCase().indexOf(method.toUpperCase())>=0){  // if method defined delete only the resource with the given ath and method
                 idx = stack.indexOf(route);
                 stack.splice(idx, 1);
+
+                removed = true;
             }
         }
     });
 
-    return true;
+    return removed;
 };
 
 module.exports.findRoute = findRoute;
