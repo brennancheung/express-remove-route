@@ -24,7 +24,7 @@
     "url": "https://github.com/brennancheung/express-remove-route/issues"
   },
   "homepage": "https://github.com/brennancheung/express-remove-route#readme",
-  "dependencies": {
-    "@types/express": "^4.17.13"
+  "optionalDependencies": {
+    "@types/express": "^4"
   }
 }

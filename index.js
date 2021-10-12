@@ -1,5 +1,4 @@
 var util=require('util');
-var _=require('underscore');
 
 
 
@@ -47,7 +46,7 @@ module.exports = function removeRoute(app, path, method) {
         stack = layer.stack;
 
         if (route) {
-            if(_.isEmpty(method)){  // if no method delete all resource with the given path
+            if(!method || method.trim().length === 0){  // if no method delete all resource with the given path
                 idx = stack.indexOf(route);
                 stack.splice(idx, 1);
 
