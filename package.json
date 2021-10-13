@@ -3,6 +3,7 @@
   "version": "0.1.1",
   "description": "Remove a route in express at runtime.",
   "main": "index.js",
+  "types": "types.d.ts",
   "scripts": {
   },
   "repository": {
@@ -22,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/brennancheung/express-remove-route/issues"
   },
-  "homepage": "https://github.com/brennancheung/express-remove-route#readme"
+  "homepage": "https://github.com/brennancheung/express-remove-route#readme",
+  "optionalDependencies": {
+    "@types/express": "^4"
+  }
 }
